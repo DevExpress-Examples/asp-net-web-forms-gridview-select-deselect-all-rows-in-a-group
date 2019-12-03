@@ -19,7 +19,7 @@
                 <dx:GridViewDataTextColumn FieldName="ProductID" ReadOnly="True" VisibleIndex="0" Visible="false" />
                 <dx:GridViewDataTextColumn FieldName="ProductName" VisibleIndex="1" />
                 <dx:GridViewDataTextColumn FieldName="SupplierID" VisibleIndex="2" />
-                <dx:GridViewDataComboBoxColumn Caption="Category Name" FieldName="CategoryID" VisibleIndex="3">
+                <dx:GridViewDataComboBoxColumn Caption="Category Name" FieldName="CategoryID" VisibleIndex="3" GroupIndex="0">
                     <PropertiesComboBox ValueField="CategoryID" TextField="CategoryName" 
                         DataSourceID="CategoryDataSource" ValueType="System.Int32" />
                 </dx:GridViewDataComboBoxColumn>
@@ -29,6 +29,7 @@
                 <dx:GridViewDataTextColumn FieldName="UnitsOnOrder" VisibleIndex="7" />
                 <dx:GridViewDataTextColumn FieldName="ReorderLevel" VisibleIndex="8" />
             </Columns>
+            <SettingsBehavior ProcessSelectionChangedOnServer="true"></SettingsBehavior>
             <Templates>
                 <GroupRowContent>
                    <table>
@@ -40,7 +41,6 @@
                    </table>
                 </GroupRowContent>
             </Templates>
-            <Settings ShowGroupPanel="true" />
             <GroupSummary>
                 <dx:ASPxSummaryItem FieldName="CategoryName" SummaryType="Count" />
             </GroupSummary>
