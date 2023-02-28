@@ -2,17 +2,17 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E1760)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Grid View for ASP.NET Web Forms- How to select/deselect all rows in a group when the control is grouped by a column
+# Grid View for ASP.NET Web Forms - How to select/deselect all rows in a group when the control is grouped by a column
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e1760/)**
 <!-- run online end -->
-This example demonstrates how to allow users to add/remove all rows in a group to/from selection. Note that this approach works only when the [Grid View](https://docs.devexpress.com/AspNet/5823/components/grid-view?p=netframework)'s data is grouped by a single column.
+This example demonstrates how to allow users to add/remove all rows in a group to/from selection. Note that this technique works only when [Grid View](https://docs.devexpress.com/AspNet/5823/components/grid-view?p=netframework) data is grouped by one column.
 
 ![Select/Deselect a Group](select-deselect.gif)
 
 ## Overview
 
-Follow the steps below to allow users to to select/deselect all rows in a group:
+Follow the steps below to allow users to to select or deselect all rows in a group:
 
 1. Create the [Grid View](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView?p=netframework) control, populate it with columns, and bind the control to a data source. To group data by a column, specify the column's [GroupIndex](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.GroupIndex?p=netframework) property. The Grid View's [GroupSummary](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.GroupSummary) property allows you to display summary items in group rows:
 
@@ -81,7 +81,7 @@ Follow the steps below to allow users to to select/deselect all rows in a group:
     }
     ```
 
-4. Handle the Grid View's [CustomCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomCallback?p=netframework) event to process the callback. Call the Grid View's [GetChildDataRow](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.GetChildDataRow(System.Int32-System.Int32)?p=netframework) method to get a data row that belongs to the current group. Pass the data row's key and the the check state of the checkbox to the [SetSelectionByKey](https://docs.devexpress.com/AspNet/DevExpress.Web.Data.WebDataSelection.SetSelectionByKey(System.Object-System.Boolean)?p=netframework) method to select or deselect this row:
+4. Handle the Grid View's [CustomCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomCallback?p=netframework) event to process the callback. Call the Grid View's [GetChildDataRow](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.GetChildDataRow(System.Int32-System.Int32)?p=netframework) method to get a data row that belongs to the current group. Pass the data row's key and the check state of the checkbox to the [SetSelectionByKey](https://docs.devexpress.com/AspNet/DevExpress.Web.Data.WebDataSelection.SetSelectionByKey(System.Object-System.Boolean)?p=netframework) method to select or deselect this row:
 
     ```cs
     protected void Grid_CustomCallback(object sender, ASPxGridViewCustomCallbackEventArgs e) {
@@ -107,5 +107,5 @@ Follow the steps below to allow users to to select/deselect all rows in a group:
 
 ## More Examples
 
-* [Grid View for ASP.NET MVC- How to select/deselect all rows in a group](https://github.com/DevExpress-Examples/gridview-how-to-implement-select-unselect-for-all-rows-in-a-group-row-t362032)
-* [Grid Lookup for ASP.NET Web Forms- How to select/deselect all rows in a group](https://github.com/DevExpress-Examples/how-to-implement-select-unselect-for-all-rows-in-a-group-row-in-aspxgridlookup-t299266)
+* [Grid View for ASP.NET MVC - How to select/deselect all rows in a group](https://github.com/DevExpress-Examples/gridview-how-to-implement-select-unselect-for-all-rows-in-a-group-row-t362032)
+* [Grid Lookup for ASP.NET Web Forms - How to select/deselect all rows in a group](https://github.com/DevExpress-Examples/how-to-implement-select-unselect-for-all-rows-in-a-group-row-in-aspxgridlookup-t299266)
