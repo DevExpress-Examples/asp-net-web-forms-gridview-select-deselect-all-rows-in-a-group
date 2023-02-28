@@ -58,7 +58,7 @@ Follow the steps below to allow users to to select/deselect all rows in a group:
     }
     ```
 
-3. Handle the Grid View control's [HtmlRowPrepared](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.HtmlRowPrepared?p=netframework) event. In the event handler, access the current group row's check box and specify its [Checked](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCheckBox.Checked?p=netframework) property. Set the [CheckedChanged](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCheckBox.CheckedChanged) event of the check box to a function that sends the visible index of the group row and the checked status of the check box as callback parameters to the server:
+3. Handle the Grid View control's [HtmlRowPrepared](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.HtmlRowPrepared?p=netframework) event. In the event handler, access the current group row's check box and specify its [Checked](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCheckBox.Checked?p=netframework) property. Set the [CheckedChanged](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCheckBox.CheckedChanged) event of the check box to a function that sends the visible index of the group row and the check state of the check box as callback parameters to the server:
 
     ```cs
     protected void Grid_HtmlRowPrepared(object sender, ASPxGridViewTableRowEventArgs e) {
@@ -81,7 +81,7 @@ Follow the steps below to allow users to to select/deselect all rows in a group:
     }
     ```
 
-4. Handle the Grid View's [CustomCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomCallback?p=netframework) event to process the callback. Call the Grid View's [GetChildDataRow](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.GetChildDataRow(System.Int32-System.Int32)?p=netframework) method to get a data row that belongs to the current group. Pass the data row's key and the the checked status of the checkbox to the [SetSelectionByKey](https://docs.devexpress.com/AspNet/DevExpress.Web.Data.WebDataSelection.SetSelectionByKey(System.Object-System.Boolean)?p=netframework) method to select or deselect this row:
+4. Handle the Grid View's [CustomCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomCallback?p=netframework) event to process the callback. Call the Grid View's [GetChildDataRow](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.GetChildDataRow(System.Int32-System.Int32)?p=netframework) method to get a data row that belongs to the current group. Pass the data row's key and the the check state of the checkbox to the [SetSelectionByKey](https://docs.devexpress.com/AspNet/DevExpress.Web.Data.WebDataSelection.SetSelectionByKey(System.Object-System.Boolean)?p=netframework) method to select or deselect this row:
 
     ```cs
     protected void Grid_CustomCallback(object sender, ASPxGridViewCustomCallbackEventArgs e) {
