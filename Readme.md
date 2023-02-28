@@ -12,7 +12,7 @@ This example demonstrates how to allow users to add/remove all rows in a group t
 
 ## Overview
 
-Follow the steps below to allow users to to select or deselect all rows in a group:
+Follow the steps below to allow users to select or deselect all rows in a group:
 
 1. Create the [Grid View](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView?p=netframework) control, populate it with columns, and bind the control to a data source. To group data by a column, specify the column's [GroupIndex](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.GroupIndex?p=netframework) property. The Grid View's [GroupSummary](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.GroupSummary) property allows you to display summary items in group rows:
 
