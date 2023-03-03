@@ -10,7 +10,7 @@
 <!-- default file list end -->
 # ASPxGridView - How to implement select/unselect for all rows in a group row
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e1760/)**
+**[[Run Online]](https://codecentral.devexpress.com/128534875/)**
 <!-- run online end -->
 
 
