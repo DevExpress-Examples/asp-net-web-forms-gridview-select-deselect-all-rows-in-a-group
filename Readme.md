@@ -58,7 +58,7 @@ Follow the steps below to allow users to select or deselect all rows in a group:
     }
     ```
 
-3. Handle the Grid View control's [HtmlRowPrepared](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.HtmlRowPrepared?p=netframework) event. In the event handler, access the current group row's check box and specify its [Checked](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCheckBox.Checked?p=netframework) property. Set the [CheckedChanged](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCheckBox.CheckedChanged) event of the check box to a function that sends the visible index of the group row and the check state of the check box as callback parameters to the server:
+3. Handle the Grid View control's [HtmlRowPrepared](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.HtmlRowPrepared?p=netframework) event. In the event handler, access the current group row's check box and specify its [Checked](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCheckBox.Checked?p=netframework) property. Set the [CheckedChanged](https://docs.devexpress.com/AspNet/DevExpress.Web.CheckEditClientSideEvents.CheckedChanged) event of the check box to a function that sends the visible index of the group row and the check state of the check box as callback parameters to the server:
 
     ```cs
     protected void Grid_HtmlRowPrepared(object sender, ASPxGridViewTableRowEventArgs e) {
