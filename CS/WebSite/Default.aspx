@@ -34,7 +34,7 @@
                 <GroupRowContent>
                    <table>
                        <tr><td>
-                            <dx:ASPxCheckBox ID="checkBox" runat="server" />
+                            <dx:ASPxCheckBox ID="checkBox" runat="server" style="margin-right: 10px"/>
                        </td><td>
                             <dx:ASPxLabel ID="CaptionText" runat="server" Text='<%# GetCaptionText(Container) %>' />
                        </td></tr>
