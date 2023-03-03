@@ -2,7 +2,7 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E1760)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Grid View for ASP.NET Web Forms - How to select/deselect all rows in a group when the control is grouped by a column
+# Grid View for ASP.NET Web Forms - How to select/deselect all rows in a group when data is grouped by one column
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e1760/)**
 <!-- run online end -->
