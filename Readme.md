@@ -2,6 +2,7 @@
 ![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128534875/19.2.4%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E1760)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
+[![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
 # Grid View for ASP.NET Web Forms - How to select/deselect all rows in a group when data is grouped by one column
 This example demonstrates how to allow users to add/remove all rows in a group to/from selection. Note that this technique works only when [Grid View](https://docs.devexpress.com/AspNet/5823/components/grid-view?p=netframework) data is grouped by one column.
@@ -107,3 +108,10 @@ Follow the steps below to allow users to select or deselect all rows in a group:
 
 * [Grid View for ASP.NET MVC - How to select/deselect all rows in a group](https://github.com/DevExpress-Examples/gridview-how-to-implement-select-unselect-for-all-rows-in-a-group-row-t362032)
 * [Grid Lookup for ASP.NET Web Forms - How to select/deselect all rows in a group](https://github.com/DevExpress-Examples/how-to-implement-select-unselect-for-all-rows-in-a-group-row-in-aspxgridlookup-t299266)
+<!-- feedback -->
+## Does this example address your development requirements/objectives?
+
+[<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-gridview-select-deselect-all-rows-in-a-group&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-gridview-select-deselect-all-rows-in-a-group&~~~was_helpful=no)
+
+(you will be redirected to DevExpress.com to submit your response)
+<!-- feedback end -->
