@@ -109,7 +109,7 @@ Follow the steps below to allow users to select or deselect all rows in a group:
 * [Grid View for ASP.NET MVC - How to select/deselect all rows in a group](https://github.com/DevExpress-Examples/gridview-how-to-implement-select-unselect-for-all-rows-in-a-group-row-t362032)
 * [Grid Lookup for ASP.NET Web Forms - How to select/deselect all rows in a group](https://github.com/DevExpress-Examples/how-to-implement-select-unselect-for-all-rows-in-a-group-row-in-aspxgridlookup-t299266)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-gridview-select-deselect-all-rows-in-a-group&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-gridview-select-deselect-all-rows-in-a-group&~~~was_helpful=no)
 
